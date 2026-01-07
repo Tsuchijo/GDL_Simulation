@@ -1,4 +1,5 @@
 version = 1
+revision = 1
 requires-python = ">=3.11"
 
 [[package]]
@@ -134,6 +135,43 @@ wheels = [
 [package.optional-dependencies]
 css = [
     { name = "tinycss2" },
+]
+
+[[package]]
+name = "cantera"
+version = "3.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "ruamel-yaml" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1e/f1/b68fa5512d77ed86b48b57f3a2cd947590a432f56fe9877a38d9fa3b4bd7/cantera-3.2.0.tar.gz", hash = "sha256:d811175e052251a7d2ea70f60fa19a5b8a61bf32d3b5565d2404b22ba57d8d41", size = 1623397 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/86/95/b32256abecefa0dd2b0b691c9ae5a808029720c2f033cb2814677b163521/cantera-3.2.0-cp311-cp311-macosx_10_15_x86_64.whl", hash = "sha256:d8d2e99483a170ed10eb40cf091e8ceb3332861126573c00939c322c73505f10", size = 6274295 },
+    { url = "https://files.pythonhosted.org/packages/5a/24/0c11b378c5bc8bc690cfefda62f42bcc3260240a7ed97a1a3e00ed6ebb4f/cantera-3.2.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:b483803be814925a0d99be781d40558f6a4d55a99c13eda0e0d61078d390e60e", size = 5496583 },
+    { url = "https://files.pythonhosted.org/packages/9c/66/f0b739a317337ce12f065d107ab26f7e2cc6b37377cf35540239969e2290/cantera-3.2.0-cp311-cp311-manylinux_2_28_aarch64.whl", hash = "sha256:9e3a53f5e267ba6cbb6f48ad77d91d1522ce81916735639f00f580a982298f3d", size = 11885718 },
+    { url = "https://files.pythonhosted.org/packages/22/e5/7c0fb6f39df80bbb1ca673ae43e8baef9c7b0f83b342227d2985ba2892a5/cantera-3.2.0-cp311-cp311-manylinux_2_28_x86_64.whl", hash = "sha256:25c5b6e3cdc8327d5c77d423843a80c78be632061b37be0f1e9e6134ae7e972d", size = 19338481 },
+    { url = "https://files.pythonhosted.org/packages/e5/8b/34f95e4587f89b5e3c05d4472fb4a78b13b453ba8e8a2e9c228e92814a08/cantera-3.2.0-cp311-cp311-win_amd64.whl", hash = "sha256:e09001b2e8325bdbb1f6a867823465ebecdc01ea07901ad3a6e84367769baf73", size = 5347757 },
+    { url = "https://files.pythonhosted.org/packages/14/1b/85b96b205cb127bda0195045e167c7fa24d2aa2568f3653273fb9f49084f/cantera-3.2.0-cp312-cp312-macosx_10_15_x86_64.whl", hash = "sha256:6ab2d45c379cf6ed4e1c74c557bd7023272e654cf2a50d2a13d2af74cd785b84", size = 6279228 },
+    { url = "https://files.pythonhosted.org/packages/ba/67/ecf71611a37db631107418f098399c130c7a2e394c56a812ba365569af48/cantera-3.2.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:d58dd40112741423a4b9b95fbbd7789575250af1fa13c77d60fab47f472f694d", size = 5475398 },
+    { url = "https://files.pythonhosted.org/packages/fc/d0/cb0c26fa02ba84ccd15191d224863367641adf8a65f046d53ee7d15852e6/cantera-3.2.0-cp312-cp312-manylinux_2_28_aarch64.whl", hash = "sha256:1b8e7bb91f92fcc2b1e2cb715543f611edcea62ec0bc3ce3fdc03abac6e02bba", size = 11843454 },
+    { url = "https://files.pythonhosted.org/packages/2d/b1/5a89f0a6fa0bcab611564a02e86dea6b95292cab1da7370c35732eeeb596/cantera-3.2.0-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:d7232fd69dda04b350b3d095dd5be234e4f627b8368421f8d1f976956feb3441", size = 19305339 },
+    { url = "https://files.pythonhosted.org/packages/b6/f7/9bd49339a73a6f45849ff860fdbf29004ea63a5ce693a89e81d75204076b/cantera-3.2.0-cp312-cp312-win_amd64.whl", hash = "sha256:258b95a4e29f9afd50788eab284e88440174302123c8b3a4a3a493904b40e238", size = 5291378 },
+    { url = "https://files.pythonhosted.org/packages/73/e1/845b5b4bfd7f667c1a4e940ec8171244364db5322f03d6bdb76316c01550/cantera-3.2.0-cp313-cp313-macosx_10_15_x86_64.whl", hash = "sha256:b0476fa867c5c5fc47c224a008dbfd93c4eff5e387914a31c3beb6095aafe145", size = 6268379 },
+    { url = "https://files.pythonhosted.org/packages/fb/8d/28c14dc1e2e5a3a4cff2fac6b3302d4a6b9023a22ff3463bdbcb784cfb80/cantera-3.2.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:aad5e1e0855a05946bc86331d1782019bf2e72763414013177298cba56c50b4f", size = 5464248 },
+    { url = "https://files.pythonhosted.org/packages/82/eb/7b7555fc5f6531e44079e0ba36e1b550f48689134878e4fbc7908e953ada/cantera-3.2.0-cp313-cp313-manylinux_2_28_aarch64.whl", hash = "sha256:2678c9b9ac83b6ede7ebd7a5cc953abfd9702f9f6d5224cbde686954222fb198", size = 11835930 },
+    { url = "https://files.pythonhosted.org/packages/af/4a/763ad5c301a552e7bd533ed25cc70150f6adfe67c6e73541ce8b8d7b00b0/cantera-3.2.0-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:52335f69b9fc6fe88d56ee5a11797c25798714f6ce1373597a3d8a26e1db4365", size = 19299408 },
+    { url = "https://files.pythonhosted.org/packages/2f/c4/2eb7115cb1a9a3e8d8f9f931e9c3031ebe6d43a2ee1a3bc454f5eacefa0c/cantera-3.2.0-cp313-cp313-win_amd64.whl", hash = "sha256:a16dcb6873b402e56e763d2017a86125ccc2f60f7234beddd5ec9c797ae8f768", size = 5294332 },
+    { url = "https://files.pythonhosted.org/packages/bc/9f/44c8315ef53fdfc03b4a4244fd3759b447790d1cd4c9345f7fd254b27e9b/cantera-3.2.0-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:0fcd3d62d8b1fd740ba149ae6a0b5a2673061336d31c60d526d0349826cd2793", size = 6270332 },
+    { url = "https://files.pythonhosted.org/packages/c3/50/daec99f5a09f1f61696816fb42c8128b6ebf515855138a0e3f06cc6b59f5/cantera-3.2.0-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:63c2a3fb5856796eef1fe9b9b65ac688863e805ccdb0c9dee0ee6410d63c896b", size = 5471960 },
+    { url = "https://files.pythonhosted.org/packages/88/c8/50d5a7489f10782aaaacdff147154fc6e445889c93609f4c936a0ceb8c38/cantera-3.2.0-cp314-cp314-manylinux_2_28_aarch64.whl", hash = "sha256:fb9a60319b1a090a107fe7cdaa9ef235bad5a8fc6780f83176605de2ec2c09ba", size = 11856620 },
+    { url = "https://files.pythonhosted.org/packages/4e/bf/5a267a658e528f112fdc120bcdefb1692c12134454819c7bb6d5fc342cf8/cantera-3.2.0-cp314-cp314-manylinux_2_28_x86_64.whl", hash = "sha256:01a92b2aa3db4b239ff4380c229283baf34f557afbb0409dc863d4204b88d0ff", size = 19307436 },
+    { url = "https://files.pythonhosted.org/packages/0b/07/da23437993f06e6251dddf2e3fa8cb8b12ded3955d034b25c925a74ad47e/cantera-3.2.0-cp314-cp314-win_amd64.whl", hash = "sha256:ab7743909ee95ae46b46c36c96f029a32b2f28f8528d175495ce4ecb76d34314", size = 5283229 },
+    { url = "https://files.pythonhosted.org/packages/2e/28/6c69120f444f8a06077fe74c6f1e64bc7c5952100fb81c9cc03bda9d42a0/cantera-3.2.0-cp314-cp314t-macosx_10_15_x86_64.whl", hash = "sha256:a9125e99d93c1810341ae9389dd0bb5ae41f0e7d3a6d7392634d872914d3980a", size = 6354783 },
+    { url = "https://files.pythonhosted.org/packages/ee/5a/eddaa256814c74b1ee14b3a5c6189db22e9a6d7856e4223584faac82e6fe/cantera-3.2.0-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:e11a218359b6b21123f5f2701f72bacc17581f2acbbbdff121e723499d9cf591", size = 5594649 },
+    { url = "https://files.pythonhosted.org/packages/39/ff/ea9e4a7e09ede234b1f8f987003cde62a9fa242f0157d1343a7ced3e37ca/cantera-3.2.0-cp314-cp314t-manylinux_2_28_aarch64.whl", hash = "sha256:fbdca971caa5df204cf077523fc6d7d9bbfed1cb40d7b3f2e48958088d9853c0", size = 11844365 },
+    { url = "https://files.pythonhosted.org/packages/47/e9/9a44ca1002e2f5cf7432b8fda05c6721f4b6ca696ac76b8f37f8bc4d1ee6/cantera-3.2.0-cp314-cp314t-manylinux_2_28_x86_64.whl", hash = "sha256:45b13e4232efde00e279b56ef09225d88d54b06260afec27bac2631caa4c5786", size = 19290981 },
 ]
 
 [[package]]
@@ -463,18 +501,22 @@ name = "hypersonics"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "cantera" },
     { name = "matplotlib" },
     { name = "notebook" },
     { name = "numpy" },
     { name = "scikit-learn" },
+    { name = "tqdm" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "cantera", specifier = ">=3.2.0" },
     { name = "matplotlib", specifier = ">=3.10.1" },
     { name = "notebook", specifier = ">=7.4.1" },
     { name = "numpy", specifier = ">=2.2.5" },
     { name = "scikit-learn", specifier = ">=1.6.1" },
+    { name = "tqdm", specifier = ">=4.67.1" },
 ]
 
 [[package]]
@@ -1579,6 +1621,15 @@ wheels = [
 ]
 
 [[package]]
+name = "ruamel-yaml"
+version = "0.19.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c7/3b/ebda527b56beb90cb7652cb1c7e4f91f48649fbcd8d2eb2fb6e77cd3329b/ruamel_yaml-0.19.1.tar.gz", hash = "sha256:53eb66cd27849eff968ebf8f0bf61f46cdac2da1d1f3576dd4ccee9b25c31993", size = 142709 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b8/0c/51f6841f1d84f404f92463fc2b1ba0da357ca1e3db6b7fbda26956c3b82a/ruamel_yaml-0.19.1-py3-none-any.whl", hash = "sha256:27592957fedf6e0b62f281e96effd28043345e0e66001f97683aa9a40c667c93", size = 118102 },
+]
+
+[[package]]
 name = "scikit-learn"
 version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1768,6 +1819,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/2b/ae/c1b22d4524b0e10da2f29a176fb2890386f7bd1f63aacf186444873a88a0/tornado-6.4.2-cp38-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:932d195ca9015956fa502c6b56af9eb06106140d844a335590c1ec7f5277d10c", size = 437261 },
     { url = "https://files.pythonhosted.org/packages/b5/25/36dbd49ab6d179bcfc4c6c093a51795a4f3bed380543a8242ac3517a1751/tornado-6.4.2-cp38-abi3-win32.whl", hash = "sha256:2876cef82e6c5978fde1e0d5b1f919d756968d5b4282418f3146b79b58556482", size = 438463 },
     { url = "https://files.pythonhosted.org/packages/61/cc/58b1adeb1bb46228442081e746fcdbc4540905c87e8add7c277540934edb/tornado-6.4.2-cp38-abi3-win_amd64.whl", hash = "sha256:908b71bf3ff37d81073356a5fadcc660eb10c1476ee6e2725588626ce7e5ca38", size = 438907 },
+]
+
+[[package]]
+name = "tqdm"
+version = "4.67.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a8/4b/29b4ef32e036bb34e4ab51796dd745cdba7ed47ad142a9f4a1eb8e0c744d/tqdm-4.67.1.tar.gz", hash = "sha256:f8aef9c52c08c13a65f30ea34f4e5aac3fd1a34959879d7e59e63027286627f2", size = 169737 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl", hash = "sha256:26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2", size = 78540 },
 ]
 
 [[package]]

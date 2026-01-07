@@ -5,8 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "cantera>=3.2.0",
     "matplotlib>=3.10.1",
     "notebook>=7.4.1",
     "numpy>=2.2.5",
     "scikit-learn>=1.6.1",
+    "tqdm>=4.67.1",
 ]
