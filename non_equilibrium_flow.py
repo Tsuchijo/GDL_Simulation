@@ -1267,17 +1267,18 @@ if __name__ == "__main__":
     print("=" * 60)
 
     # Exact notebook parameters (cell 14)
-    length = 0.4  # m
-    n_points = 50
+    length = 1.0  # m
+    n_points = 100
     P0 = 101325.0 * 10.0  # 10 atm in Pascal
-    T0 = 1500.0  # K
-    X_CO2 = 0.09
-    X_N2 = 0.90
-    X_H2O = 0.01
-    min_A = 0.01  # m^2
-    reservoir_A = 0.05  # m^2
-    exit_A = 0.1  # m^2
-    time_span = 0.001  # s (first stage)
+    T0 = 2300.0  # K
+    X_CO2 = 0.15
+    X_N2 = 0.75
+    X_H2O = 0.10
+
+    min_A = 40 * 1e-6  # m^2
+    reservoir_A = min_A * 20  # m^2
+    exit_A = min_A * 20  # m^2
+    time_span = 0.005  # s (first stage)
     second_stage_time = 0.0003  # s (second stage)
 
     print(f"\nSimulation Parameters:")
@@ -1332,7 +1333,7 @@ if __name__ == "__main__":
         length=length,
         n_points=n_points,
         time_span=time_span,
-        two_stage=True,
+        two_stage=False,
         second_stage_time=second_stage_time
     )
 
